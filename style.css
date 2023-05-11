@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+html {
+
+
+  overflow-y: scroll;
+
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  overflow-y: scroll; 
+
+}
+
+:root {
+  --bg-color: yellow;
+  --second-bg-color: yellow;
+  --text-color: black;
+  --main-color: black;
+}
+/* Styles for the navigation menu */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    border-radius: 5px;
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: yellow;
+    color: black;
+  }
+  
+  /* Styles for the hero section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    padding: 50px;
+  }
+  
+  .hero-image {
+    
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-image img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .hero-text {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-text button:hover {
+    background-color: black;
+    color: yellow;
+  }
+  
+  /* Styles for the car list section */
+  .cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 50px;
+    color: white;
+  }
+  
+  .car {
+    margin: 20px;
+
+    text-align: center;
+  }
+  
+  .car img {
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .car img:hover {
+    scale: 1.1;
+  }
+  
+  .car h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .car p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+  
+  .contact{
+    min-height: auto;
+    padding-bottom: 20rem;
+    
+}
+
+.contact h2 {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 300%;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 300%;
+}
+
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus {
+    width: 100%;
+}
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+.contact form .textarea-field textarea {
+    resize: none;
+}
+
+.contact form .btn-box.btns .btn {
+    cursor: pointer;
+}
+
+
+.heading {
+  position: relative;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+span {
+  color: var(--main-color);
+}
+
+
+  /* Styles for the footer section */
+  footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media queries for responsive design */
+  @media only screen and (min-width: 768px) {
+    /* Styles for navigation menu */
+    nav {
+      flex-wrap: wrap;
+    }
+    
+    nav ul {
+      margin-left: auto;
+    }
+    
+    /* Styles for hero section */
+    .hero {
+      flex-direction: row;
+    }
+    
+    .hero-image {
+      width: 50%;
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+    
+    .hero-text {
+      width: 50%;
+      text-align: left;
+    }
+    
+    
+    /* Styles for car list section */
+    
+  }
+  
+  @media only screen and (min){}
+
+  /* добавен стил за бутоните */
+  .bu {
+    padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  }
+
+  .bu:hover {
+    background-color: black;
+    color: yellow;
+  }
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f8b61c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* добавен стил за формата */
+form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* добавен стил за текста на формата */
+form h2, form label {
+  color: #333;
+}
+
+/* добавен стил за полетата на формата */
+form input[type="text"], form input[type="email"], form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+/* добавен стил за валидирането на формата */
+form input[type="text"]:invalid, form input[type="email"]:invalid, form textarea:invalid {
+  border: 2px solid red;
+}
+
+form input[type="text"]:valid, form input[type="email"]:valid, form textarea:valid {
+  border: 2px solid green;
+}
+
+/* добавен стил за footer */
+footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
